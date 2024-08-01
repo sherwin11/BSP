@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8fcfa0"
+    tools:context=".Register">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/linbgsplash"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:textColor="#8fcfa0"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="@font/opensansbolditalig"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to"/>
+        <TextView
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="#8fcfa0"
+            android:textSize="30sp"
+            android:fontFamily="@font/opensansbolditalig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BSP Create Account Form"/>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:src="@drawable/bspleyte"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:gravity="center"
+                android:text="@string/name"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/surreg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:autofillHints="name"
+                    android:backgroundTint="#8fcfa0"
+                    android:hint="Surname"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textColorHint="#705d5e5e"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <EditText
+                    android:id="@+id/firstreg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:autofillHints="name"
+                    android:backgroundTint="#8fcfa0"
+                    android:hint="First Name"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textColorHint="#705d5e5e"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <EditText
+                    android:id="@+id/midreg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:autofillHints="name"
+                    android:backgroundTint="#8fcfa0"
+                    android:hint="Mid Name"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textColorHint="#705d5e5e"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/genderreg"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:backgroundTint="#8fcfa0"
+                    android:completionThreshold="1"
+                    android:hint="Gender"
+                    android:inputType="none"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textColorHint="#705d5e5e" />
+
+                <ImageView
+                    android:id="@+id/gnbiew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/genderreg"
+                    android:layout_alignBottom="@+id/genderreg"
+                    android:layout_marginStart="-32dp"
+                    android:layout_toEndOf="@+id/genderreg"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_baseline_arrow_drop_down_24" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/agereg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:autofillHints="name"
+                android:backgroundTint="#8fcfa0"
+                android:hint="Age"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textColorHint="#705d5e5e" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:gravity="center"
+                android:text="Email: "
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/emailreg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:autofillHints="name"
+                android:backgroundTint="#8fcfa0"
+                android:hint="******"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="#705d5e5e"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:gravity="center"
+                android:text="School: "
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/schoolreg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:autofillHints="name"
+                android:backgroundTint="#8fcfa0"
+                android:hint="******"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="#705d5e5e"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:gravity="center"
+                android:text="Date of Birth: "
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/birthreg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:autofillHints="name"
+                android:backgroundTint="#8fcfa0"
+                android:hint="YYYY-MM-DD"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="#705d5e5e"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/createreg"
+                android:layout_gravity="center"
+                android:fontFamily="@font/opensanitalic"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/black"
+                android:text="Create Account"
+                tools:ignore="InvalidId" />
+        </LinearLayout>
+        <TextView
+            android:textColor="#8fcfa0"
+            android:layout_marginTop="15sp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="@font/opensanitalic"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="In collaboration with"/>
+        <LinearLayout
+            android:layout_margin="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginStart="-20dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/leyte"/>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="100dp"
+                android:layout_margin="5dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ddc"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FPOSI"
+                    android:fontFamily="@font/opensansbolditalig"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    android:textColor="#b30909"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

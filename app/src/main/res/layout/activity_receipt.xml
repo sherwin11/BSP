@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8fcfa0"
+    android:id="@+id/formx"
+    tools:context=".Receipt">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/linbgsplash"
+        android:layout_margin="20dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:src="@drawable/bspleyte"/>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:background="#8fcfa0" />
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:background="#8fcfa0" />
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="#8fcfa0"
+            android:textSize="23sp"
+            android:fontFamily="@font/opensansbolditalig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BSP Acknowledge Receipt Form"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="#8fcfa0"
+            android:textSize="18sp"
+            android:fontFamily="@font/opensanitalic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thank you for registering for the"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="#8fcfa0"
+            android:textSize="18sp"
+            android:fontFamily="@font/opensansbold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Boy Scout of the Philippines"/>
+
+        <TextView
+            android:id="@+id/refnumber"
+            android:layout_marginTop="10dp"
+            android:textColor="#8fcfa0"
+            android:fontFamily="@font/opensanitalic"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reference Number : AUR2023021248797"/>
+        <!--        <TextView-->
+        <!--            android:id="@+id/mobileNumber"-->
+        <!--            android:layout_marginTop="5dp"-->
+        <!--            android:textColor="#8fcfa0"-->
+        <!--            android:fontFamily="@font/opensanitalic"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:textStyle="bold"-->
+        <!--            android:textSize="15sp"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Mobile Number : 09123456789"/>-->
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center|right"
+                android:textStyle="bold"
+                android:textColor="#8fcfa0"
+                android:textSize="20sp"
+                android:id="@+id/amountlabel"
+                android:fontFamily="@font/opensansbold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount : "/>
+            <TextView
+                android:id="@+id/amounttxt"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center|left"
+                android:textStyle="bold"
+                android:textColor="#8fcfa0"
+                android:textSize="18sp"
+                android:fontFamily="@font/opensanitalic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1200"/>
+        </LinearLayout>
+
+        <!--        <TextView-->
+        <!--            android:layout_marginTop="18dp"-->
+        <!--            android:textColor="#8fcfa0"-->
+        <!--            android:fontFamily="@font/opensanitalic"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:textStyle="bold"-->
+        <!--            android:textSize="15sp"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:textAlignment="center"-->
+        <!--            android:layout_marginStart="15sp"-->
+        <!--            android:layout_marginEnd="15sp"-->
+        <!--            android:text="You may call the mobile number above to confirm your registration using the reference number."/>-->
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:background="#8fcfa0" />
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:background="#8fcfa0" />
+        <Button
+            android:id="@+id/backtomenu"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensanitalic"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/black"
+            android:text="Back to menu"
+            tools:ignore="InvalidId" />
+        <TextView
+            android:textColor="#8fcfa0"
+            android:layout_marginTop="10sp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="@font/opensanitalic"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="In collaboration with"/>
+        <LinearLayout
+            android:layout_margin="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginStart="-20dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/leyte"/>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="100dp"
+                android:layout_margin="5dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ddc"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FPOSI"
+                    android:fontFamily="@font/opensansbolditalig"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    android:textColor="#b30909"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="#8fcfa0"-->
+<!--    android:id="@+id/formx"-->
+<!--    tools:context=".Receipt">-->
+
+<!--    <LinearLayout-->
+
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="@drawable/linbgsplash"-->
+<!--        android:layout_margin="20dp"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:orientation="vertical">-->
+<!--        <ImageView-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_width="120dp"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:src="@drawable/bspleyte"/>-->
+<!--        <View-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="3dp"-->
+<!--            android:layout_marginStart="3dp"-->
+<!--            android:layout_marginEnd="3dp"-->
+<!--            android:background="#8fcfa0" />-->
+<!--        <View-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="3dp"-->
+<!--            android:layout_marginStart="3dp"-->
+<!--            android:layout_marginEnd="3dp"-->
+<!--            android:background="#8fcfa0" />-->
+
+
+<!--        <TextView-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="#8fcfa0"-->
+<!--            android:textSize="23sp"-->
+<!--            android:fontFamily="@font/opensansbolditalig"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="BSP Acknowledge Receipt Form"/>-->
+<!--        <TextView-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="#8fcfa0"-->
+<!--            android:textSize="18sp"-->
+<!--            android:fontFamily="@font/opensanitalic"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Thank you for registering for the"/>-->
+<!--        <TextView-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="#8fcfa0"-->
+<!--            android:textSize="18sp"-->
+<!--            android:fontFamily="@font/opensansbold"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Boy Scout of the Philippines"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/refnumber"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:textColor="#8fcfa0"-->
+<!--            android:fontFamily="@font/opensanitalic"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="15sp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Reference Number : AUR2023021248797"/>-->
+<!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/mobileNumber"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginTop="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textColor="#8fcfa0"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:fontFamily="@font/opensanitalic"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textStyle="bold"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textSize="15sp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:text="Mobile Number : 09123456789"/>&ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_gravity="center|right"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="#8fcfa0"-->
+<!--                android:textSize="20sp"-->
+<!--                android:id="@+id/amountlabel"-->
+<!--                android:fontFamily="@font/opensansbold"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Amount : "/>-->
+<!--            <TextView-->
+<!--                android:id="@+id/amounttxt"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_gravity="center|left"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="#8fcfa0"-->
+<!--                android:textSize="18sp"-->
+<!--                android:fontFamily="@font/opensanitalic"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="1200"/>-->
+<!--        </LinearLayout>-->
+
+<!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginTop="18dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textColor="#8fcfa0"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:fontFamily="@font/opensanitalic"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textStyle="bold"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textSize="15sp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textAlignment="center"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginStart="15sp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginEnd="15sp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:text="You may call the mobile number above to confirm your registration using the reference number."/>&ndash;&gt;-->
+<!--        <View-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="3dp"-->
+<!--            android:layout_marginStart="3dp"-->
+<!--            android:layout_marginEnd="3dp"-->
+<!--            android:background="#8fcfa0" />-->
+<!--        <View-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="3dp"-->
+<!--            android:layout_marginStart="3dp"-->
+<!--            android:layout_marginEnd="3dp"-->
+<!--            android:background="#8fcfa0" />-->
+<!--        <Button-->
+<!--            android:id="@+id/backtomenu"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:fontFamily="@font/opensanitalic"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:text="Back to menu"-->
+<!--            tools:ignore="InvalidId" />-->
+<!--        <TextView-->
+<!--            android:textColor="#8fcfa0"-->
+<!--            android:layout_marginTop="10sp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:textStyle="bold"-->
+<!--            android:fontFamily="@font/opensanitalic"-->
+<!--            android:textSize="15sp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="In collaboration with"/>-->
+<!--        <LinearLayout-->
+<!--            android:layout_margin="20sp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:weightSum="3"-->
+<!--            android:gravity="center"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <ImageView-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginStart="-20dp"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:contentDescription="@string/app_name"-->
+<!--                android:src="@drawable/leyte"/>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:orientation="vertical">-->
+<!--                <ImageView-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:contentDescription="@string/app_name"-->
+<!--                    android:src="@drawable/ddc"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="FPOSI"-->
+<!--                    android:fontFamily="@font/opensansbolditalig"-->
+<!--                    android:textSize="19dp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="#b30909"-->
+<!--                    android:layout_gravity="center"/>-->
+<!--            </LinearLayout>-->
+
+
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->

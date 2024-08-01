@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#8fcfa0"
+    android:layout_height="match_parent"
+    tools:context=".ChangePass">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/linbgsplash"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:textColor="#8fcfa0"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="@font/opensansbolditalig"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to"/>
+        <TextView
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="#8fcfa0"
+            android:textSize="30sp"
+            android:fontFamily="@font/opensansbolditalig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BSP Login Form"/>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:src="@drawable/bspleyte"/>
+
+
+
+        <EditText
+            android:id="@+id/emailchange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:enabled="false"
+            android:autofillHints="name"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:backgroundTint="#8fcfa0"
+            android:hint="Email address"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="#705d5e5e"
+            tools:ignore="TouchTargetSizeCheck" />
+        <EditText
+            android:id="@+id/newpas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:autofillHints="name"
+            android:textAlignment="center"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:backgroundTint="#8fcfa0"
+            android:hint="New Password"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textColorHint="#705d5e5e"
+            tools:ignore="TouchTargetSizeCheck" />
+        <EditText
+            android:id="@+id/retrypas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:autofillHints="name"
+            android:textAlignment="center"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:backgroundTint="#8fcfa0"
+            android:hint="Retry New Password"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textColorHint="#705d5e5e"
+            tools:ignore="TouchTargetSizeCheck" />
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/butchange"
+                android:layout_gravity="center"
+                android:fontFamily="@font/opensanitalic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/black"
+                android:text="Change password"
+                tools:ignore="InvalidId" />
+        </LinearLayout>
+        <TextView
+            android:textColor="#8fcfa0"
+            android:layout_marginTop="15sp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="@font/opensanitalic"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="In collaboration with"/>
+        <LinearLayout
+            android:layout_margin="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginStart="-10dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/leyte"/>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="100dp"
+                android:layout_margin="5dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ddc"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FPOSI"
+                    android:fontFamily="@font/opensansbolditalig"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    android:textColor="#b30909"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

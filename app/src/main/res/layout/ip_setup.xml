@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linIp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/linbgsplash"
+        android:orientation="vertical"
+        android:padding="15dp">
+        <Button
+            android:id="@+id/clox"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:text="X"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/iptext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:autofillHints="name"
+            android:backgroundTint="#8fcfa0"
+            android:hint="IP Host : http://"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="#705d5e5e"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Test IP"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"/>
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SAVE"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

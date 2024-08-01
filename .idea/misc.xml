@@ -1,0 +1,54 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/drawable/butbg.xml" value="0.249" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/drawable/cardviewbg.xml" value="0.2565" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/drawable/dialbg.xml" value="0.2565" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/drawable/dialbggreen.xml" value="0.2565" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/drawable/linbgsplash.xml" value="0.249" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/drawable/lingb.xml" value="0.2565" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/drawable/opocityback.xml" value="0.249" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/drawable/pagebg.xml" value="0.2565" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/drawable/tabbg.xml" value="0.1925" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/layout/activity_change_pass.xml" value="0.3625" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/layout/activity_foruploads.xml" value="0.3625" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/layout/activity_history.xml" value="0.3625" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/layout/activity_loading.xml" value="0.3625" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/layout/activity_main.xml" value="0.38074866310160427" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/layout/activity_receipt.xml" value="0.3625" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/layout/activity_register.xml" value="0.3484375" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/layout/activity_splash_screen.xml" value="0.3625" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/layout/activity_splash_screenx.xml" value="0.33" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/layout/addfield.xml" value="0.3625" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/layout/adultleadaddfield.xml" value="0.3625" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/layout/adultleaderspopup.xml" value="0.5" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/layout/aurrosterpopup.xml" value="0.3625" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/layout/content_splash_screen.xml" value="0.3625" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/layout/fragment_a_a_r.xml" value="0.33" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/layout/fragment_a_a_rold.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/layout/fragment_a_a_s_r.xml" value="0.33" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/layout/fragment_a_a_s_rold.xml" value="0.3625" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/layout/fragment_a_u_rold.xml" value="0.33" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/layout/fragment_aasrold.xml" value="0.3625" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/layout/fragment_first.xml" value="0.3625" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/layout/fragment_second.xml" value="0.3625" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/layout/history_item.xml" value="0.3614583333333333" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/layout/ip_setup.xml" value="0.3614583333333333" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/layout/oldaasrpopup.xml" value="0.3625" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/layout/oldaddfield.xml" value="0.3625" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/layout/popupadd.xml" value="0.3625" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/layout/rosteraddfield.xml" value="0.5" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/layout/rosterpopup.xml" value="0.5" />
+        <entry key="..\:/Users/ASUS/Documents/PROGRAMMING/BSP/BSP Registration/app/src/main/res/layout/unit_item.xml" value="0.3625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

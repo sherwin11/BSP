@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/img_thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0.0px"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="10dp"
+        app:cardPreventCornerOverlap="false">
+
+        <LinearLayout
+            android:background="@color/white"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:textColor="#8fcfa0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Student"
+                android:layout_margin="5dp"
+                android:textSize="25sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="center"
+                    android:text="@string/name"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:textAlignment="center"
+                    android:id="@+id/oldaasrsurname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:autofillHints="name"
+                    android:backgroundTint="#fa051d"
+                    android:hint="Surname"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textColorHint="#705d5e5e" />
+
+                <EditText
+                    android:id="@+id/oldaasrfirstname"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:autofillHints="name"
+                    android:backgroundTint="#fa051d"
+                    android:hint="First Name"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textColorHint="#705d5e5e" />
+
+                <EditText
+                    android:id="@+id/oldaasrmidname"
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:autofillHints="name"
+                    android:backgroundTint="#8fcfa0"
+                    android:hint="Mid Name"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textColorHint="#705d5e5e" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/oldaasrgendertxt"
+                        android:layout_width="150dp"
+                        android:layout_height="45dp"
+                        android:backgroundTint="#fa051d"
+                        android:completionThreshold="1"
+                        android:hint="Gender"
+                        android:inputType="none"
+                        android:padding="5dp"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textColorHint="#705d5e5e" />
+
+                    <ImageView
+                        android:id="@+id/oldaasrgenderimg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/oldaasrgendertxt"
+                        android:layout_alignBottom="@+id/oldaasrgendertxt"
+                        android:layout_marginStart="-32dp"
+                        android:layout_toEndOf="@+id/oldaasrgendertxt"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_baseline_arrow_drop_down_24" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/oldaasrage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:autofillHints="name"
+                    android:backgroundTint="#fa051d"
+                    android:hint="Age"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textColorHint="#705d5e5e" />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/oldaasrregstat"
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        android:backgroundTint="#fa051d"
+                        android:completionThreshold="1"
+                        android:hint="N/RR"
+                        android:inputType="none"
+                        android:padding="5dp"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textColorHint="#705d5e5e" />
+
+                    <ImageView
+                        android:id="@+id/oldaasrregstatimg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/oldaasrregstat"
+                        android:layout_alignBottom="@+id/oldaasrregstat"
+                        android:layout_marginStart="-32dp"
+                        android:layout_toEndOf="@+id/oldaasrregstat"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_baseline_arrow_drop_down_24" />
+                </RelativeLayout>
+                <!--                <EditText-->
+                <!--                    android:id="@+id/tmpgender"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_gravity="center"-->
+                <!--                    android:layout_weight="1"-->
+                <!--                    android:autofillHints="name"-->
+                <!--                    android:backgroundTint="#8fcfa0"-->
+                <!--                    android:hint="Gender"-->
+                <!--                    android:inputType="text"-->
+                <!--                    android:textColor="@color/black"-->
+                <!--                    android:textColorHint="#705d5e5e" />-->
+            </LinearLayout>
+            <EditText
+                android:id="@+id/oldaasrreligion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:textAlignment="center"
+                android:autofillHints="name"
+                android:backgroundTint="#8fcfa0"
+                android:hint="Religion"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="#705d5e5e" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="center"
+                    android:text="Membership Card No. :"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/oldaasrmemcardNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:autofillHints="name"
+                    android:backgroundTint="#8fcfa0"
+                    android:textAlignment="center"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textColorHint="#705d5e5e" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/oldaasrhighestrank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:autofillHints="name"
+                    android:backgroundTint="#8fcfa0"
+                    android:hint="Highest Rank Earned"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textColorHint="#705d5e5e" />
+
+                <EditText
+                    android:id="@+id/oldaasrtennureinscounting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:autofillHints="name"
+                    android:backgroundTint="#fa051d"
+                    android:hint="Tenure in Scouting"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textColorHint="#705d5e5e" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Close"
+                    android:id="@+id/oldtmpclose"/>
+                <Button
+                    android:layout_marginStart="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:id="@+id/oldtmpsubmmit"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">BSP Registration</string>
+    <string name="home">Home</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="aar">AAR</string>
+    <string name="aasr">AASR</string>
+    <string name="aarold">AAR</string>
+    <string name="_181_natividad_almeda_lopez_street_ermita_manila_1000">181 Natividad Almeda-Lopez Street, Ermita, Manila 1000</string>
+    <string name="boy_scout_of_the_phillippines">BOY SCOUTS OF THE PHILLIPPINES</string>
+    <string name="name">Name :</string>
+    <string name="surename_first_name_middle_name">Surename/First Name/Middle Name</string>
+    <string name="gender">F/M</string>
+    <string name="_2_registration_status_n_new_rr_reregistering">2. Registration status <b><u>N</u></b> – New / <b><u>RR</u></b> – Reregistering</string>
+    <string name="rexx">1. Registration status <b><u>N</u></b> – New / <b><u>RR</u></b> – Reregistering</string>
+    <string name="password">password</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_loading">Loading</string>
+</resources>

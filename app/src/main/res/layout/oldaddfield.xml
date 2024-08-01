@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/img_thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0.0px"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="10dp"
+        app:cardPreventCornerOverlap="false">
+
+        <LinearLayout
+            android:padding="5dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:text="Remove"
+                    android:id="@+id/toldremove"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:layout_marginStart="10dp"
+                    android:text="Edit"
+                    android:id="@+id/toldedit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="center"
+                    android:text="@string/name"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/toldaarsurname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:autofillHints="name"
+                    android:backgroundTint="#8fcfa0"
+                    android:hint="Surname"
+                    android:enabled="false"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textColorHint="#705d5e5e" />
+
+                <EditText
+                    android:id="@+id/toldaarname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:autofillHints="name"
+                    android:backgroundTint="#8fcfa0"
+                    android:hint="First Name"
+                    android:enabled="false"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textColorHint="#705d5e5e" />
+
+                <EditText
+                    android:id="@+id/toldaarmidname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:autofillHints="name"
+                    android:backgroundTint="#8fcfa0"
+                    android:hint="Mid Name"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textColorHint="#705d5e5e" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/toldergendertxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:autofillHints="name"
+                    android:enabled="false"
+                    android:backgroundTint="#8fcfa0"
+                    android:hint="Gender"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textColorHint="#705d5e5e" />
+
+                <EditText
+                    android:id="@+id/toldaasrage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:autofillHints="name"
+                    android:backgroundTint="#8fcfa0"
+                    android:hint="Age"
+                    android:enabled="false"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textColorHint="#705d5e5e" />
+
+                <EditText
+                    android:id="@+id/toldaasrgender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:autofillHints="name"
+                    android:backgroundTint="#8fcfa0"
+                    android:hint="Reg Status"
+                    android:inputType="text"
+                    android:enabled="false"
+                    android:textColor="@color/black"
+                    android:textColorHint="#705d5e5e" />
+            </LinearLayout>
+
+                <EditText
+                    android:id="@+id/toldaasrregstatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:autofillHints="name"
+                    android:enabled="false"
+                    android:visibility="gone"
+                    android:backgroundTint="#8fcfa0"
+                    android:hint="Religion"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textColorHint="#705d5e5e" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="center"
+                    android:text="Membership Card No. :"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/toldaasrmemcardnum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:autofillHints="name"
+                    android:enabled="false"
+                    android:backgroundTint="#8fcfa0"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textColorHint="#705d5e5e" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/toldaasrrankearned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:autofillHints="name"
+                    android:backgroundTint="#8fcfa0"
+                    android:hint="Highest Rank Earned :"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textColorHint="#705d5e5e" />
+
+                <EditText
+                    android:id="@+id/toldaasryearsof"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:enabled="false"
+                    android:layout_weight="1"
+                    android:autofillHints="name"
+                    android:backgroundTint="#8fcfa0"
+                    android:hint="Years in Scouting"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textColorHint="#705d5e5e" />
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,1244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tabbg"
+    tools:context=".AAR">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--        AAR HEADER-->
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/bsplogo"/>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="@string/boy_scout_of_the_phillippines"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textStyle="italic"
+                    android:textColor="@color/black"
+                    android:text="@string/_181_natividad_almeda_lopez_street_ermita_manila_1000"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:text="APPLICATION FOR ADULT REGISTRATION"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:background="#8fcfa0" />
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:background="#8fcfa0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#cf0000"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:text="AAR NUMBER :"/>
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/aarnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:autofillHints="name"
+            android:textColorHint="#705d5e5e"
+            android:backgroundTint="#8fcfa0"
+            android:hint="#####"
+            android:inputType="text"
+            android:textColor="@color/black"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <!--        AAR NAME-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:gravity="center"
+                        android:text="@string/name"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/aarsurname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:autofillHints="name"
+                            android:backgroundTint="#8fcfa0"
+                            android:hint="Surname"
+                            android:inputType="text"
+                            android:textColor="@color/black"
+                            android:textColorHint="#705d5e5e"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <EditText
+                            android:id="@+id/aarname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:autofillHints="name"
+                            android:backgroundTint="#8fcfa0"
+                            android:hint="First Name"
+                            android:inputType="text"
+                            android:textColor="@color/black"
+                            android:textColorHint="#705d5e5e"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <EditText
+                            android:id="@+id/aarmidname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:autofillHints="name"
+                            android:backgroundTint="#8fcfa0"
+                            android:hint="Mid Name"
+                            android:inputType="text"
+                            android:textColor="@color/black"
+                            android:textColorHint="#705d5e5e"
+                            tools:ignore="TouchTargetSizeCheck" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--        AAR GENDER-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:gravity="center"
+                        android:text="Gender :"
+                        android:textColor="@color/black" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/aargender"
+                            android:layout_width="80dp"
+                            android:layout_height="45dp"
+                            android:backgroundTint="#8fcfa0"
+                            android:completionThreshold="1"
+                            android:hint="@string/gender"
+                            android:inputType="none"
+                            android:padding="5dp"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textColorHint="#705d5e5e"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <ImageView
+                            android:id="@+id/aargendropimg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/aargender"
+                            android:layout_alignBottom="@+id/aargender"
+                            android:layout_marginStart="-15dp"
+                            android:layout_toEndOf="@+id/aargender"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_baseline_arrow_drop_down_24" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:gravity="center"
+                        android:text="Civil Status :"
+                        android:textColor="@color/black" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/aarcivil"
+                            android:layout_width="100dp"
+                            android:layout_height="45dp"
+                            android:backgroundTint="#8fcfa0"
+                            android:completionThreshold="1"
+                            android:hint="*****"
+                            android:inputType="none"
+                            android:padding="5dp"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textColorHint="#705d5e5e"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <ImageView
+                            android:id="@+id/aarcivildropimg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/aarcivil"
+                            android:layout_alignBottom="@+id/aarcivil"
+                            android:layout_marginStart="-15dp"
+                            android:layout_toEndOf="@+id/aarcivil"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_baseline_arrow_drop_down_24" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:gravity="center"
+                        android:text="Tenure in Scouting :"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/aartenure"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:autofillHints="name"
+                        android:backgroundTint="#8fcfa0"
+                        android:hint="Tenure"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="#705d5e5e"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:gravity="center"
+                        android:text="Membership Card No. :"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/aarmembershipNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:autofillHints="name"
+                        android:backgroundTint="#8fcfa0"
+                        android:hint="######"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="#705d5e5e"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:gravity="center"
+                        android:text="Expiration Date :"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/aarexpdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:autofillHints="name"
+                        android:backgroundTint="#8fcfa0"
+                        android:hint="YYYY-MM-DD"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="#705d5e5e"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:gravity="center"
+                        android:text="To serve as: "
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/aarserveas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:autofillHints="name"
+                        android:backgroundTint="#8fcfa0"
+                        android:hint="******"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="#705d5e5e"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:gravity="center"
+                        android:text="Unit No: "
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/aarunitNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:autofillHints="name"
+                        android:backgroundTint="#8fcfa0"
+                        android:hint="######"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="#705d5e5e"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:gravity="center"
+                        android:text="Sponsoring Institution: "
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/aarsponinstitution"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:autofillHints="name"
+                        android:backgroundTint="#8fcfa0"
+                        android:hint="******"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="#705d5e5e"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:gravity="center"
+                        android:text="Council: "
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/aarcounsil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:autofillHints="name"
+                        android:backgroundTint="#8fcfa0"
+                        android:hint="******"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="#705d5e5e"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:gravity="center"
+                        android:text="Mailing Address: "
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/aarmailingadd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:autofillHints="name"
+                        android:backgroundTint="#8fcfa0"
+                        android:hint="******"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="#705d5e5e"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:gravity="center"
+                        android:text="Date of Birth: "
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/aardateofbirth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:autofillHints="name"
+                        android:backgroundTint="#8fcfa0"
+                        android:hint="YYYY-MM-DD"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="#705d5e5e"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:gravity="center"
+                        android:text="Place of Birth: "
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/aarplaceofbirth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:autofillHints="name"
+                        android:backgroundTint="#8fcfa0"
+                        android:hint="*****************"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="#705d5e5e"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:gravity="center"
+                        android:text="Religion: "
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/aarreligion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:autofillHints="name"
+                        android:backgroundTint="#8fcfa0"
+                        android:hint="*****************"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="#705d5e5e"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:gravity="center"
+                        android:text="Profession/Occupation: "
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/aarprofession"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:autofillHints="name"
+                        android:backgroundTint="#8fcfa0"
+                        android:hint="*****************"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="#705d5e5e"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:gravity="center"
+                        android:text="Position/Title: "
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/aarposition"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:autofillHints="name"
+                        android:backgroundTint="#8fcfa0"
+                        android:hint="*****************"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="#705d5e5e"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:gravity="center"
+                        android:text="Other Affiliations: "
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/aaraffiliation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:autofillHints="name"
+                        android:backgroundTint="#8fcfa0"
+                        android:hint="*****************"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="#705d5e5e"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:gravity="center"
+                        android:text="Registration status: "
+                        android:textColor="@color/black" />
+
+                    <CheckBox
+                        android:id="@+id/aarcheckNew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:buttonTint="#8fcfa0"
+                        android:gravity="center"
+                        android:text="New"
+                        android:textColor="#000"
+                        android:textSize="13dp" />
+
+                    <CheckBox
+                        android:id="@+id/aarcheckReregistering"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:buttonTint="#8fcfa0"
+                        android:gravity="center"
+                        android:text="Reregistering"
+                        android:textColor="#000"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="3dp"
+                    android:background="#8fcfa0" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="3dp"
+                    android:background="#8fcfa0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:gravity="center"
+                        android:text="SAFE FROM HARM"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:gravity="center"
+                            android:scrollbarSize="8dp"
+                            android:scrollbarStyle="insideInset"
+                            android:scrollbarThumbVertical="@android:color/darker_gray"
+                            android:scrollbars="vertical"
+                            android:text="World Scouting emphasizes that the achievement of Scouting’s Mission makes it essential for the Movement to provide young people with a “safe passage” based on respect for their integrity and their right to develop in a non constraining environment. The Boy Scouts of the Philippines implements “Safe from Harm” on the conviction that all adults and children have a right NOT to be abused. This is a fundamental human right. Abuse can take the form of bullying, physical abuse, emotional abuse, neglect, sexual abuse and exploitation. It is important to note that young people can suffer from one or a combination of these forms of abuse. Abuse can take place at home, at school or anywhere young people spend time. In the great majority of cases, the abuser is someone the young person knows, such as a parent, teacher, relative, leader or friend. The main objective is to ensure that no one will be exposed to abuse. Good child protection practice means making sure that everyone is aware of signs of potential abuse. It is based upon the Declaration on the Rights of the Child and Human Rights. I hereby commit and fully subscribe to the existing Safe From Harm Policy of the Boy Scouts of the Philippines, and that I hereby absolve and free the BSP from any liability arising from any of my acts contrary to the policy. I hereby accept that the BSP may immediately revoke my registration as an adult leader upon violation of such policy."
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="italic" />
+                    </ScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/aarsignature"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:autofillHints="name"
+                        android:backgroundTint="#8fcfa0"
+                        android:hint="*****************"
+                        android:inputType="text"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textColorHint="#705d5e5e"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center"
+                        android:text="Signature Over Printed Name"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/lingb"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="REGISTRATION FEES"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Please check one;"
+                                android:textColor="@color/black"
+                                android:textStyle="italic" />
+
+                            <RadioGroup
+                                android:id="@+id/aarradiogroup"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/aarchecklceb"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="#8fcfa0"
+                                    android:text="LCEB Members"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp" />
+
+                                <RadioButton
+                                    android:id="@+id/aarULAUL"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="#8fcfa0"
+                                    android:text="UL/AUL"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp" />
+
+                                <RadioButton
+                                    android:id="@+id/aarlayleaders"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="#8fcfa0"
+                                    android:text="Lay Leaders"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp" />
+                            </RadioGroup>
+
+                            <!--                                <CheckBox-->
+                            <!--                                    android:gravity="center"-->
+                            <!--                                    android:id="@+id/aarchecklceb"-->
+                            <!--                                    android:layout_width="wrap_content"-->
+                            <!--                                    android:layout_height="wrap_content"-->
+                            <!--                                    android:buttonTint="#8fcfa0"-->
+                            <!--                                    android:text="LCEB Members"-->
+                            <!--                                    android:textColor="#000"-->
+                            <!--                                    android:textSize="13dp" />-->
+                            <!--                                <CheckBox-->
+                            <!--                                    android:gravity="center"-->
+                            <!--                                    android:id="@+id/aarULAUL"-->
+                            <!--                                    android:layout_width="wrap_content"-->
+                            <!--                                    android:layout_height="wrap_content"-->
+                            <!--                                    android:buttonTint="#8fcfa0"-->
+                            <!--                                    android:text="UL/AUL"-->
+                            <!--                                    android:textColor="#000"-->
+                            <!--                                    android:textSize="13dp" />-->
+                            <!--                                <CheckBox-->
+                            <!--                                    android:gravity="center"-->
+                            <!--                                    android:id="@+id/aarlayleaders"-->
+                            <!--                                    android:layout_width="wrap_content"-->
+                            <!--                                    android:layout_height="wrap_content"-->
+                            <!--                                    android:buttonTint="#8fcfa0"-->
+                            <!--                                    android:text="Lay Leaders"-->
+
+                            <!--                                    android:textColor="#000"-->
+                            <!--                                    android:textSize="13dp" />-->
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:text="AMOUNT PAID"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="100dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:text="Rate"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="100dp"
+                                android:layout_marginTop="15dp"
+                                android:gravity="center"
+                                android:text="500.00"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="100dp"
+                                android:layout_marginTop="27dp"
+                                android:gravity="center"
+                                android:text="60.00"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="100dp"
+                                android:layout_marginTop="37dp"
+                                android:gravity="center"
+                                android:text="100.00"
+                                android:textColor="@color/black" />
+
+                            <EditText
+                                android:id="@+id/aaramountpaid"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:autofillHints="name"
+                                android:backgroundTint="#8fcfa0"
+                                android:gravity="center"
+                                android:hint="######"
+                                android:inputType="text"
+                                android:textColor="@color/black"
+                                android:textColorHint="#705d5e5e"
+                                tools:ignore="TouchTargetSizeCheck" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Paid Under OR. No."
+                            android:textColor="@color/black" />
+
+                        <EditText
+                            android:id="@+id/aarpaidunderor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:autofillHints="name"
+                            android:backgroundTint="#8fcfa0"
+                            android:hint="******"
+                            android:inputType="text"
+                            android:textColor="@color/black"
+                            android:textColorHint="#705d5e5e"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <EditText
+                            android:id="@+id/aardatefees"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:autofillHints="name"
+                            android:backgroundTint="#8fcfa0"
+                            android:hint="Date"
+                            android:inputType="text"
+                            android:textColor="@color/black"
+                            android:textColorHint="#705d5e5e"
+                            tools:ignore="TouchTargetSizeCheck" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/lingb"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="LOCAL COUNCIL OFFICE ACTION"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Processed :"
+                                    android:textColor="@color/black" />
+
+                                <EditText
+                                    android:id="@+id/aarlocalcouncilprocessed"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:autofillHints="name"
+                                    android:backgroundTint="#8fcfa0"
+                                    android:gravity="center"
+                                    android:hint="Registration Officer"
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="#705d5e5e"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/aarlocalcouncildate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:autofillHints="name"
+                                    android:backgroundTint="#8fcfa0"
+                                    android:gravity="center"
+                                    android:hint="Date"
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="#705d5e5e"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Approve :"
+                                    android:textColor="@color/black" />
+
+                                <EditText
+                                    android:id="@+id/aarlocalcouncilapprove"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:autofillHints="name"
+                                    android:backgroundTint="#8fcfa0"
+                                    android:gravity="center"
+                                    android:hint="Council Scout Executive"
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="#705d5e5e"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/aarlocalcouncilappdate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:autofillHints="name"
+                                    android:backgroundTint="#8fcfa0"
+                                    android:gravity="center"
+                                    android:hint="Date"
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="#705d5e5e"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/lingb"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="REGIONAL OFFICE ACTION"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Checked :"
+                                    android:textColor="@color/black" />
+
+                                <EditText
+                                    android:id="@+id/aarregionalofficecheck"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:autofillHints="name"
+                                    android:backgroundTint="#8fcfa0"
+                                    android:gravity="center"
+                                    android:hint="Council Scout Executive"
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="#705d5e5e"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/aarregionaldate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:autofillHints="name"
+                                    android:backgroundTint="#8fcfa0"
+                                    android:gravity="center"
+                                    android:hint="Date"
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="#705d5e5e"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/sub"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="SUBMIT"
+                    tools:ignore="InvalidId" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

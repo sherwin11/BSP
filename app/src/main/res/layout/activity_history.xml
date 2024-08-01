@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8fcfa0"
+    tools:context=".History">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/linbgsplash"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/refnumber"
+            android:layout_marginTop="10dp"
+            android:textColor="#8fcfa0"
+            android:fontFamily="@font/opensanitalic"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HISTORY"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/histrecycle"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
